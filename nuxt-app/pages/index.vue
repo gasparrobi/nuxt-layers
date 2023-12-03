@@ -39,6 +39,7 @@ export default {
         `dependencies from layers are not being auto installed. 
         <a href="https://github.com/nuxt/nuxt/issues/13367" target="blank">issue #13367</a> &
         <a href="https://github.com/unjs/c12/issues/51" target="blank">issue #51</a>`,
+        "not sure if vuex or pinia can be used in layers as the stores/ dir is not shared between layers",
       ],
     };
   },
