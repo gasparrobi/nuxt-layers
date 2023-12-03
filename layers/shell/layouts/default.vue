@@ -12,7 +12,7 @@
 <script>
 import Navigation from "../components/Navigation.vue";
 import VFooter from "../components/Footer.vue";
-import Analytics from "../components/analytics.vue";
+import Analytics from "../components/Analytics.vue";
 import "../globals.scss";
 
 export default {
