@@ -24,11 +24,16 @@
         <div v-html="issue" />
       </li>
     </ul>
+
+    <br />
+    <p><strong>pinia store:</strong></p>
+    <p>count: {{ count }}</p>
   </div>
 </template>
 
 <script>
-import { logMessage } from "#utils/utils/index";
+import { mapState } from "pinia";
+import { useCounterStore } from "@/stores/counter";
 
 export default {
   components: {},
@@ -44,9 +49,8 @@ export default {
     };
   },
 
-  mounted() {
-    logMessage();
-    addTwo(2);
+  computed: {
+    ...mapState(useCounterStore, ["count"]),
   },
 };
 </script>
