@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { logMessage } from "../../layers/utils/utils/index";
+import { logMessage } from "#utils/utils/index";
 
 export default {
   components: {},
